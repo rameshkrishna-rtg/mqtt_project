@@ -1,0 +1,7 @@
+{
+    "name": "ramesh/mqtt_project",
+    "description": "MQTT PHP publishing project",
+    "require": {
+        "php-mqtt/client": "^2.3"
+    }
+}
