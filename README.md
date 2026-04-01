@@ -1,2 +1,2 @@
 
-Using MQTT protocol sending data as a publish
+Using MQTT protocol sending data as a publisher
