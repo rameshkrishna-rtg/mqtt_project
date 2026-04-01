@@ -11,7 +11,9 @@ $clientId = 'php_test_' . uniqid();
 $mqtt = new MqttClient($server, $port, $clientId);
 $mqtt->connect();
 
-
+$mqtt->subscribe('connect/check', function ($topic, $message) {
+    echo "Received: {$message}\n";
+}, 0);
 
 $mqtt->publish('connect/check', 'From publisher', 0);
 
